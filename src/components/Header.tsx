@@ -59,6 +59,9 @@ export const Header: React.FC = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600 dark:text-slate-300">
+              <Link href="/catalogo" className="hover:text-teal-600 transition-colors font-bold text-teal-600 dark:text-teal-400">
+                Catálogo
+              </Link>
               <Link href="/#racoes" className="hover:text-teal-600 transition-colors">
                 Rações
               </Link>
@@ -124,6 +127,13 @@ export const Header: React.FC = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden border-t border-slate-100 bg-white px-4 py-3 shadow-lg dark:border-slate-800 dark:bg-slate-950 animate-fade-in">
             <div className="flex flex-col gap-3.5 text-sm font-semibold text-slate-700 dark:text-slate-300">
+              <Link
+                href="/catalogo"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="hover:text-teal-600 text-teal-600 dark:text-teal-400"
+              >
+                Catálogo
+              </Link>
               <Link
                 href="/#racoes"
                 onClick={() => setIsMobileMenuOpen(false)}
