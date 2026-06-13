@@ -42,6 +42,24 @@ export default async function ProdutoPage({
               {product.category === 'racoes' ? 'Ração' : product.category === 'acessorios' ? 'Acessório' : 'Banho & Tosa'}
             </span>
           </div>
+
+          {/* Miniature Gallery */}
+          <div className="grid grid-cols-4 gap-3">
+            {[1, 2, 3, 4].map((i) => (
+              <button 
+                key={i} 
+                className={`relative aspect-square overflow-hidden rounded-xl border-2 transition-all cursor-pointer ${
+                  i === 1 ? 'border-teal-600 opacity-100' : 'border-transparent opacity-60 hover:opacity-100 hover:border-slate-200 dark:hover:border-slate-700'
+                }`}
+              >
+                <img
+                  src={product.image_url}
+                  alt={`${product.name} galeria ${i}`}
+                  className="h-full w-full object-cover object-center"
+                />
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Right: Product Info */}
@@ -74,6 +92,17 @@ export default async function ProdutoPage({
                 R$ {product.originalPrice.toFixed(2)}
               </span>
             )}
+          </div>
+
+          <div className="mt-4 flex items-center gap-2">
+            <span className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold ${
+              product.stock_quantity && product.stock_quantity > 0 
+                ? 'bg-teal-50 text-teal-700 dark:bg-teal-950 dark:text-teal-300' 
+                : 'bg-rose-50 text-rose-700 dark:bg-rose-950 dark:text-rose-300'
+            }`}>
+              <span className={`h-1.5 w-1.5 rounded-full ${product.stock_quantity && product.stock_quantity > 0 ? 'bg-teal-500' : 'bg-rose-500'}`}></span>
+              {product.stock_quantity && product.stock_quantity > 0 ? `${product.stock_quantity} em estoque` : 'Esgotado'}
+            </span>
           </div>
 
           <p className="mt-6 text-base text-slate-600 dark:text-slate-400 leading-relaxed">
