@@ -148,13 +148,13 @@ export default function CarrinhoPage() {
               </div>
             </div>
 
-            <button
-              onClick={() => alert('Compra finalizada com sucesso! Esta é uma demonstração.')}
+            <Link
+              href="/checkout"
               className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl bg-teal-600 py-4 text-sm font-bold text-white shadow-md transition-all hover:bg-teal-700 hover:shadow-lg active:scale-95"
             >
               Finalizar Compra
               <ArrowRight className="h-5 w-5" />
-            </button>
+            </Link>
             
             <Link
               href="/catalogo"
