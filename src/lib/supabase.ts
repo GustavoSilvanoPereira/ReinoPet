@@ -39,6 +39,7 @@ export function mapDbProductToProduct(dbProduct: DbProduct): Product {
     rating,
     reviews_count,
     in_stock: dbProduct.estoque > 0,
+    stock_quantity: dbProduct.estoque,
     is_featured,
   };
 }

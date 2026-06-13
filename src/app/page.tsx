@@ -61,13 +61,13 @@ export default async function Home() {
               </p>
               
               <div className="flex flex-wrap gap-3.5 mt-2">
-                <a 
-                  href="#destaques" 
+                <Link 
+                  href="/catalogo" 
                   className="inline-flex items-center gap-2 rounded-xl bg-teal-600 px-6 py-3.5 text-sm font-bold text-white shadow-md transition-all hover:bg-teal-700 hover:shadow-lg active:scale-98 cursor-pointer"
                 >
                   <ShoppingBag className="h-4 w-4" />
                   Comprar Agora
-                </a>
+                </Link>
                 <a 
                   href="#banho-e-tosa" 
                   className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-700 shadow-xs transition-all hover:bg-slate-50 hover:text-teal-600 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 cursor-pointer"

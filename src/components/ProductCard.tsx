@@ -3,9 +3,10 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Product } from '@/types';
 import { useCart } from '@/hooks/useCart';
-import { Star, ShoppingBag, Heart } from 'lucide-react';
+import { Star, ShoppingBag, Heart, Eye } from 'lucide-react';
 
 interface ProductCardProps {
   product: Product;
@@ -90,13 +91,22 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             </span>
           </div>
 
-          <button
-            onClick={() => addToCart(product)}
-            className="flex h-9 items-center justify-center gap-2 rounded-lg bg-teal-600 px-3 text-xs font-semibold text-white shadow-xs transition-all hover:bg-teal-700 hover:shadow-md active:scale-95 cursor-pointer"
-          >
-            <ShoppingBag className="h-3.5 w-3.5" />
-            <span>Adicionar</span>
-          </button>
+          <div className="flex gap-2">
+            <Link
+              href={`/produto/${product.id}`}
+              className="flex h-9 items-center justify-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 text-xs font-semibold text-slate-700 shadow-xs transition-all hover:bg-slate-50 hover:text-teal-600 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700 cursor-pointer"
+            >
+              <Eye className="h-3.5 w-3.5" />
+              <span className="hidden sm:inline">Visualizar</span>
+            </Link>
+            <button
+              onClick={() => addToCart(product)}
+              className="flex h-9 items-center justify-center gap-1.5 rounded-lg bg-teal-600 px-3 text-xs font-semibold text-white shadow-xs transition-all hover:bg-teal-700 hover:shadow-md active:scale-95 cursor-pointer"
+            >
+              <ShoppingBag className="h-3.5 w-3.5" />
+              <span className="hidden sm:inline">Adicionar</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
