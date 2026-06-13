@@ -284,12 +284,13 @@ export const Header: React.FC = () => {
                 <span>{cartTotal >= 199 ? 'Grátis 🎉' : 'Calcular na finalização'}</span>
               </div>
               
-              <button
-                onClick={() => alert('Parabéns pela compra simulada no Reino Pet!')}
-                className="mt-4 w-full rounded-xl bg-teal-600 py-3 text-xs font-bold text-white shadow-md transition-all hover:bg-teal-700 hover:shadow-lg text-center cursor-pointer"
+              <Link
+                href="/carrinho"
+                onClick={() => setIsCartOpen(false)}
+                className="mt-4 block w-full rounded-xl bg-teal-600 py-3 text-xs font-bold text-white shadow-md transition-all hover:bg-teal-700 hover:shadow-lg text-center cursor-pointer"
               >
-                Finalizar Compra
-              </button>
+                Ver Carrinho Completo
+              </Link>
               
               <button
                 onClick={() => setIsCartOpen(false)}
