@@ -179,7 +179,7 @@ export default async function Home() {
           {/* Acessórios Category Card */}
           <Link href="#acessorios" className="group relative overflow-hidden rounded-2xl aspect-[4/3] bg-amber-900 text-white shadow-xs cursor-pointer">
             <img
-              src="https://images.unsplash.com/photo-1541599540903-216a46ca1ad0?w=600&auto=format&fit=crop&q=80"
+              src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=600&auto=format&fit=crop&q=80"
               alt="Acessórios"
               className="absolute inset-0 h-full w-full object-cover opacity-60 transition-transform duration-500 group-hover:scale-105"
             />
