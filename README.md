@@ -1,5 +1,7 @@
 # Reino Pet 🐾
 
+🚀 **Aplicação em Produção:** [https://reinopet.vercel.app/](https://reinopet.vercel.app/)
+
 ## Descrição
 O **Reino Pet** é um e-commerce moderno e completo voltado para o bem-estar animal. O sistema permite que os usuários naveguem por um catálogo de rações, acessórios e serviços de banho e tosa. O grande diferencial da plataforma é o **Assistente de IA**, que analisa a descrição do animal (raça, idade, necessidades especiais) e recomenda os produtos mais adequados do catálogo, justificando as escolhas de forma empática e especializada.
 

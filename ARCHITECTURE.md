@@ -1,6 +1,8 @@
 # Arquitetura do Sistema - Reino Pet
 
-O Reino Pet foi construído seguindo uma arquitetura moderna e escalável de aplicação web, dividindo as responsabilidades entre o cliente (navegador), o servidor intermediário (Next.js) e serviços de nuvem especializados (Supabase e Google Gemini / OpenAI).
+🚀 **Aplicação em Produção:** [https://reinopet.vercel.app/](https://reinopet.vercel.app/)
+
+O Reino Pet foi construído seguindo uma arquitetura moderna e escalável de aplicação web, dividindo as responsabilidades entre o cliente (navegador), o servidor intermediário (Next.js) e serviços de nuvem especializados (Supabase e Google Gemini / OpenAI). A aplicação (frontend e backend intermediário) está hospedada na **Vercel**.
 
 ## Diagrama Simples de Integração da IA
 

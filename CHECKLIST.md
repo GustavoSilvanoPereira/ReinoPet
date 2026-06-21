@@ -17,5 +17,5 @@ Abaixo está a lista de verificação de todos os requisitos do projeto Reino Pe
   - Utilização de Tailwind CSS.
 - [x] **Documentação da Arquitetura (`ARCHITECTURE.md`)**: Diagrama claro explicando a interação entre o Usuário, o Next.js, o Supabase e a API de IA.
 - [x] **Segurança de Variáveis**: Criação do arquivo `.env.example` protegendo credenciais sensíveis (Chaves de API) de vazamentos no repositório público.
-- [ ] **Deploy em Nuvem (Vercel)**: Aplicação hospedada e rodando na web para testes do avaliador (Link de produção).
+- [x] **Deploy em Nuvem (Vercel)**: Aplicação hospedada e rodando na web para testes do avaliador (Link de produção: [https://reinopet.vercel.app/](https://reinopet.vercel.app/)).
 - [ ] **Apresentação / Vídeo**: Gravação demonstrando o fluxo do E-commerce e o Assistente de IA sugerindo produtos baseados no catálogo real do Supabase.
